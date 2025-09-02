@@ -1,0 +1,181 @@
+@import "_custom-properties.css";
+*::-moz-selection {
+    background: var(--color-theme-primary);
+    color: var(--color-theme-white);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: var(--color-theme-primary);
+    color: var(--color-theme-white);
+    text-shadow: none;
+}
+
+::selection {
+    background: var(--color-theme-primary);
+    color: var(--color-theme-white);
+    text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+.highlight-font-family {
+    font-family: 'Hero', sans-serif !important;
+}
+
+.z-index-minus {
+    z-index: var(--z-index-minus);
+}
+
+body {
+    background: var(--global-body-bgcolor);
+    color: var(--global-font-color);
+    font-family: var(--global-font-family);
+    font-size: var(--font-size-body);
+    line-height: var(--font-line-height-body);
+    letter-spacing: var(--font-letter-spacing-body);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--highlight-font-family);
+    font-stretch: condensed;
+    clear: both;
+    margin: .625em 0;
+    word-break: break-word;
+    text-transform: capitalize;
+}
+
+h1 {
+    color: var(--global-font-title);
+    font-size: var(--font-size-h1);
+    line-height: var(--font-line-height-h1);
+    letter-spacing: var(--font-letter-spacing-h1);
+    font-weight: var(--font-weight-h1);
+}
+
+h2 {
+    color: var(--global-font-title);
+    font-size: var(--font-size-h2);
+    line-height: var(--font-line-height-h2);
+    letter-spacing: var(--font-letter-spacing-h2);
+    font-weight: var(--font-weight-h2);
+}
+
+h3 {
+    color: var(--global-font-title);
+    font-size: var(--font-size-h3);
+    line-height: var(--font-line-height-h3);
+    letter-spacing: var(--font-letter-spacing-h3);
+    font-weight: var(--font-weight-h3);
+}
+
+h4 {
+    color: var(--global-font-title);
+    font-size: var(--font-size-h4);
+    line-height: var(--font-line-height-h4);
+    letter-spacing: var(--font-letter-spacing-h4);
+    font-weight: var(--font-weight-h4);
+}
+
+h5 {
+    color: var(--global-font-title);
+    font-size: var(--font-size-h5);
+    line-height: var(--font-line-height-h5);
+    letter-spacing: var(--font-letter-spacing-h5);
+    font-weight: var(--font-weight-h5);
+}
+
+h6 {
+    color: var(--global-font-title);
+    font-size: var(--font-size-h6);
+    line-height: var(--font-line-height-h6);
+    letter-spacing: var(--font-letter-spacing-h6);
+    font-weight: var(--font-weight-h6);
+}
+
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: var(--global-font-color);
+}
+
+small,
+.text_small {
+    font-size: var(--font-size-normal);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.z-index-minus {
+    z-index: var(--z-index-minus);
+}
+
+.letter-spacing {
+    letter-spacing: var(--letter-spacing);
+}
+
+a {
+    font-size: var(--font-size-body);
+    color: var(--color-theme-primary);
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-size: inherit;
+}
+
+p {
+    margin: 1em 0;
+    line-height: var(--font-line-height-p);
+}
+
+pre {
+    background: var(--global-body-lightbg);
+    color: var(--global-font-color);
+    padding: 1em;
+    border: 0.0625em solid var(--color-theme-primary);
+}
+
+a,
+i,
+a h1,
+a h2,
+a h3,
+a h4,
+a h5,
+a h6 {
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+.css_prefix h1,
+.css_prefix h2,
+.css_prefix h3,
+.css_prefix h4,
+.css_prefix h5,
+.css_prefix h6 {
+    margin: 0;
+}

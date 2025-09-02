@@ -1,0 +1,33 @@
+body.admin-bar header,
+body.admin-bar.css_prefix-default-header header {
+    top: 2em;
+}
+
+body.admin-bar .has-sticky.header-up {
+    top: 2em;
+}
+
+@media (max-width:600px) {
+    /* Static adminbar (Not sticky)*/
+    body.admin-bar .has-sticky.header-up {
+        top: 0;
+    }
+    body.admin-bar header {
+        top: 2.875em;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    body.admin-bar header.no-header-layout,
+    body.admin-bar.css_prefix-default-header header {
+        top: 2.875em;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 782px) {
+    body.admin-bar .has-sticky.header-up,
+    body.admin-bar header,
+    body.admin-bar.css_prefix-default-header header {
+        top: 2.875em;
+    }
+}

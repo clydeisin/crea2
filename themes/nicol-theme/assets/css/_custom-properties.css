@@ -1,0 +1,173 @@
+/**
+ * Custom Properties
+ * CSS variables.
+ *
+ * @link: https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+ **/
+
+/*--------------------------------------------------------------
+# Fontface
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Hero';
+    src: url('fonts/Hero-Regular.woff2') format('woff2'), url('fonts/Hero-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('fonts/Hero-Bold.woff2') format('woff2'), url('fonts/Hero-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('fonts/Hero-Light.woff2') format('woff2'), url('fonts/Hero-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Container */
+    --content-width: 81.25em;
+    --content-width-sm: 73.125em;
+    --sidebar-width: 18.75em;
+    /* Typography */
+    --global-font-family: 'Hero', sans-serif;
+    --highlight-font-family: 'Hero', sans-serif;
+    --global-font-size: 1em;
+    --global-font-line-height: 1.75;
+    --global-box-shadow: 0.25em 0.625em 2.8125em 0 rgb(0 0 0 / 31%);
+    /* Page Spacing */
+    --global-page-top-spacing: 11em;
+    --global-page-bottom-spacing: 11em;
+    --global-page-top-spacing-tablet: 5.5em;
+    --global-page-bottom-spacing-tablet: 5.5em;
+    --global-page-top-spacing-mobile: 3.125em;
+    --global-page-bottom-spacing-mobile: 3.125em;
+    /* Custom editor font sizes */
+    --font-size-small: calc(16 / var(--global-font-size) * 1em);
+    --font-size-regular: calc(var(--global-font-size) / 16 * 1em);
+    --font-size-large: calc(36 / var(--global-font-size) * 1em);
+    --font-size-larger: calc(48 / var(--global-font-size) * 1em);
+    /* Fontsize */
+    --font-size-small: 0.75em;
+    --font-size-normal: 0.875em;
+    --font-size-body: 1em;
+    --font-size-h1: 5.653em;
+    --font-size-h2: 3.998em;
+    --font-size-h3: 2.827em;
+    --font-size-h4: 1.999em;
+    --font-size-h5: 1.414em;
+    --font-size-h6: 1em;
+    --font-size-xs: 0.75em;
+    /* Line-Height */
+    --font-line-height-body: 1.75;
+    --font-line-height-p: 1.75;
+    --font-line-height-h1: 1.3;
+    --font-line-height-h2: 1.3;
+    --font-line-height-h3: 1.3;
+    --font-line-height-h4: 1.3;
+    --font-line-height-h5: 1.3;
+    --font-line-height-h6: 1.75;
+    /* Font-Weight */
+    --font-weight-body: 500;
+    --font-weight-h1: bold;
+    --font-weight-h2: bold;
+    --font-weight-h3: bold;
+    --font-weight-h4: bold;
+    --font-weight-h5: bold;
+    --font-weight-h6: 400;
+    /* font-weight*/
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    /* Letter spacing */
+    --font-letter-spacing-body: 0.02em;
+    --font-letter-spacing-link: 0.02em;
+    --font-letter-spacing-h1: 0.02em;
+    --font-letter-spacing-h2: 0.02em;
+    --font-letter-spacing-h3: 0.02em;
+    --font-letter-spacing-h4: 0.02em;
+    --font-letter-spacing-h5: 0.02em;
+    --font-letter-spacing-h6: 0.25em;
+    --letter-spacing: 0.25em;
+    --letter-spacing-one: 0.04em;
+    --letter-spacing-two: 0.125em;
+    --letter-spacing-three: 0.1875em;
+    --letter-spacing-four: 0.04em;
+    --letter-spacing-subtitle: 0.212em;
+    /* border-radius */
+    --border-radius: 0;
+    --border-radius-box: 0.625em;
+    --border-radius-ten: 0.625em;
+    --border-radius-btn: 0.375em;
+    /* z index */
+    --z-index-minus: -1;
+    /* Colors */
+    --global-body-bgcolor: #0E0F1A;
+    --global-body-lightbg: #151727;
+    --global-body-lightbg-opacity: rgb(21 23 39 / 3%);
+    --global-font-color: #d9d9d9;
+    --white-card-text: #525357;
+    --global-font-title: #ffffff;
+    --global-font-subtitle: #d9d9d9;
+    --global-submenu-bg: #151727;
+    --global-submenu-light: #7C7C7C;
+    --border-color-light: #525357;
+    --color-link: #FF7272;
+    --color-link-visited: #FF7272;
+    --color-link-active: #FF7272;
+    --color-loading-bar: #333966;
+    /* Custom editor colors */
+    --color-theme-primary: #FF7272;
+    --color-theme-secondary: #060606;
+    --color-theme-text: #151727;
+    --color-theme-red: #c0392b;
+    --color-theme-green: #27ae60;
+    --color-theme-blue: #a483dc;
+    --color-theme-yellow: #FFD81C;
+    --color-theme-black: #0b0b0b;
+    --color-theme-grey: #95a5a6;
+    --color-theme-white: #ffffff;
+    --color-theme-white-light: #fafafa;
+    --color-custom-daylight: #97c0b7;
+    --color-custom-sun: #eee9d1;
+    --footer-theme-dark: #0E0F1A;
+    --color-theme-lightbg: #151727;
+    /* Header editor colors */
+    --global-font-active: #FF7272;
+    --global-font-hover: #FF7272;
+}
+
+@media (min-width: 1920px) {
+    :root {
+        --font-size-body: 0.83vw;
+    }
+}
+
+@media (max-width: 991px) {
+    :root {
+        --font-size-h1: 3.052em;
+        --font-size-h2: 2.441em;
+        --font-size-h3: 1.953em;
+        --font-size-h4: 1.563em;
+        --font-size-h5: 1.25em;
+        --font-letter-spacing-body: 0.01em;
+        --font-letter-spacing-link: 0.01em;
+        --font-letter-spacing-h1: 0.01em;
+        --font-letter-spacing-h2: 0.01em;
+        --font-letter-spacing-h3: 0.01em;
+        --font-letter-spacing-h4: 0.01em;
+        --font-letter-spacing-h5: 0.01em;
+        --font-letter-spacing-h6: 0.25em;
+    }
+}

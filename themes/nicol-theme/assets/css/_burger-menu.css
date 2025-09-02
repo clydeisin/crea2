@@ -1,0 +1,753 @@
+.css_prefix-mobile-menu.css_prefix-navigation-burger {
+    display: block;
+}
+
+/*---------------------------------------------------------------------
+                          Header-styles
+-----------------------------------------------------------------------*/
+
+.css_prefix-mobile-menu {
+    background: var(--global-body-bgcolor);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -o-opacity: 1;
+    transform: translateY(-120%);
+    -webkit-transform: translateY(-120%);
+    -moz-transform: translateY(-120%);
+    -o-transform: translateY(-120%);
+    -ms-transform: translateY(-120%);
+    transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+}
+
+.css_prefix-mobile-menu.menu-open {
+    pointer-events: all;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -o-opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+}
+
+.css_prefix-mobile-menu.header-up,
+.css_prefix-mobile-menu.header-down {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 99;
+    transition: all 0.45s ease 0s;
+    -webkit-transition: all 0.45s ease 0s;
+    -moz-transition: all 0.45s ease 0s;
+    -o-transition: all 0.45s ease 0s;
+}
+
+.css_prefix-mobile-menu.menu-open.header-down {
+    top: 0;
+    z-index: 99;
+}
+
+.css_prefix-mobile-menu.header-down {
+    top: -6.25em;
+}
+
+.css_prefix-mobile-menu .navbar {
+    padding: 0;
+    z-index: 999;
+}
+
+.css_prefix-mobile-menu .sub-header {
+    background: transparent;
+}
+
+header .sub-header {
+    font-size: var(--font-size-normal);
+}
+
+.css_prefix-mobile-menu .sub-header {
+    padding: 0 10.125em;
+}
+
+header.style-default {
+    position: absolute;
+    background: var(--color-theme-white);
+}
+
+.css_prefix-mobile-menu li .search-box .search-submit,
+.css_prefix-mobile-menu li .search-box input[type="search"] {
+    right: -2em;
+}
+
+.css_prefix-mobile-menu .sub-header .number-info li a {
+    font-size: var(--font-size-normal);
+    margin-right: 0;
+}
+
+.css_prefix-mobile-menu .sub-header .number-info li a {
+    color: var(--body-text);
+    line-height: 2.8125em;
+    padding: 0;
+    margin-right: 2em;
+}
+
+.css_prefix-mobile-menu .sub-header .social-icone ul li i,
+.css_prefix-mobile-menu .sub-header .number-info li a i {
+    color: var(--secondary-color);
+}
+
+.css_prefix-mobile-menu .sub-header .social-icone ul li:hover i,
+.css_prefix-mobile-menu .sub-header .number-info li:hover a i,
+.css_prefix-mobile-menu .sub-header .number-info li:hover a {
+    color: var(--color-theme-primary);
+}
+
+.css_prefix-mobile-menu .sub-header .social-icone ul li {
+    border: none;
+    background: transparent;
+}
+
+.css_prefix-mobile-menu .sub-header .social-icone ul li i {
+    width: 2em;
+}
+
+.css_prefix-mobile-menu .sub-header .number-info li {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #0c0c0c;
+}
+
+.css_prefix-mobile-menu .navbar-light .navbar-toggler-icon i {
+    line-height: 0;
+    font-size: 2.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.css_prefix-mobile-menu ul.navbar-nav li.menu-item-has-children>a:after {
+    display: none;
+}
+
+.css_prefix-mobile-menu ul.navbar-nav>li.menu-item-has-children>a {
+    padding-right: 0;
+}
+
+.css_prefix-default-header .css_prefix-mobile-menu .navbar-brand {
+    padding: 1em 0;
+}
+
+/*************style 1***********/
+
+.navbar-toggler.custom-toggler {
+    display: block;
+}
+
+.navbar-toggler.custom-toggler {
+    padding: 0 0.3125em 0 0;
+    position: static;
+    margin-left: 1.25em;
+    border-radius: 0;
+    border: none;
+}
+
+.menu-btn {
+    background-image: none;
+    position: relative;
+    z-index: 9;
+    width: 1.25em;
+    height: 1.25em;
+    cursor: pointer;
+}
+
+.menu-btn .line {
+    width: 100%;
+    height: 0.125em;
+    background-color: var(--global-font-color);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    cursor: pointer;
+    transition: left 0.3s cubic-bezier(.29, .61, .9, .45);
+}
+
+.menu-btn .line.two {
+    left: 0.3125em;
+    top: 0.625em;
+}
+
+.menu-btn .line.three {
+    top: 1.25em;
+}
+
+.ham-toggle:hover .menu-btn:not(.is-active) .line.two {
+    left: 0;
+}
+
+.ham-toggle:hover .menu-btn:not(.is-active) .line.one,
+.ham-toggle:hover .menu-btn:not(.is-active) .line.three {
+    left: 0.3125em;
+}
+
+.ham-s-toggle {
+    cursor: pointer;
+}
+
+.css_prefix-mobile-menu .navbar-nav>li>a {
+    font-size: 2.5em;
+    color: var(--color-theme-white);
+    line-height: normal;
+}
+
+.css_prefix-mobile-menu .navbar-nav a {
+    display: inline-block;
+    padding: 0;
+}
+
+.css_prefix-mobile-menu .navbar-nav>li a {
+    font-family: var(--highlight-font-family);
+}
+
+.css_prefix-mobile-menu .navbar-nav li:hover>a,
+.css_prefix-mobile-menu .navbar-nav li .sub-menu li:hover>a,
+.css_prefix-mobile-menu .navbar-nav li.current-menu-item>a,
+.css_prefix-mobile-menu ul>li.current-menu-ancestor>a,
+.css_prefix-mobile-menu ul li .sub-menu li.menu-item.current-menu-ancestor>a,
+.css_prefix-mobile-menu ul li .sub-menu li.current-menu-item>a,
+.css_prefix-mobile-menu ul>li.current-menu-ancestor>.toggledrop i,
+.css_prefix-mobile-menu ul>li.current-menu-ancestor>.toggledrop i,
+.css_prefix-mobile-menu .navbar-nav li:hover>.toggledrop i,
+.css_prefix-mobile-menu .navbar-nav li.current-menu-item>.toggledrop i,
+.css_prefix-full-menu ul li.current_page_ancestor>a,
+.css_prefix-mobile-menu .navbar-nav li .sub-menu li.current-menu-parent>a,
+.css_prefix-full-menu ul li.current_page_ancestor .toggledrop i,
+.css_prefix-mobile-menu .navbar-nav li .sub-menu li.current-menu-parent .toggledrop i,
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav>li.current-menu-parent>a,
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav>li.current_page_ancestor>a,
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav>li.current_page_ancestor>a,
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav li .sub-menu li.current-menu-parent>a {
+    color: var(--color-theme-primary);
+}
+
+.css_prefix-mobile-menu .navbar-nav li>.toggledrop i {
+    margin-left: 1em;
+    cursor: pointer;
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    color: var(--color-theme-white);
+}
+
+.css_prefix-mobile-menu .navbar-nav li .sub-menu li .toggledrop i {
+    color: var(--global-font-color);
+}
+
+.css_prefix-mobile-menu .navbar-nav li .sub-menu li:hover .toggledrop i,
+.css_prefix-mobile-menu .navbar-nav li .sub-menu li.current-menu-item .toggledrop i,
+.css_prefix-mobile-menu .navbar-nav li .sub-menu li.current-menu-ancestor .toggledrop i {
+    color: var(--color-theme-primary);
+}
+
+.css_prefix-mobile-menu .navbar-nav .toggledrop.active i {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+
+.css_prefix-mobile-menu .navbar-nav li .css_prefix-has-sub-menu li a {
+    font-size: var(--font-size-h5);
+    color: var(--global-font-color);
+}
+
+.css_prefix-mobile-menu .navbar-nav li .css_prefix-has-sub-menu li {
+    margin-bottom: 0.3125em;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+}
+
+.menu-open .menu-btn.is-active .line {
+    background: var(--color-theme-white);
+}
+
+.side-bar-open #menu-btn-side-close .menu-btn.is-s-active .line {
+    transition-delay: .2s;
+}
+
+.side-bar-open .menu-btn .line-n {
+    width: 100%;
+    height: 0.125em;
+    background-color: var(--color-theme-white);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    cursor: pointer;
+    transition: left 0.3s cubic-bezier(.29, .61, .9, .45);
+}
+
+#menu-btn-side-close .menu-btn.is-s-active .line {
+    transition-delay: 1s;
+}
+
+.side-bar-open #menu-btn-side-close {
+    position: absolute;
+    right: 4.375em;
+    top: 3.125em;
+}
+
+.side-bar-open #menu-btn-side-close .menu-btn .line-n.c-one {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.c-collapse {
+    position: relative;
+    width: 100%;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    align-items: flex-start !important;
+    z-index: 1;
+}
+
+.menu-new-wrapper.row {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 5.6875em);
+}
+
+.verticle-mn {
+    height: calc(100vh - 6.25em);
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+}
+
+.css_prefix-mobile-menu.menu-open:before {
+    -webkit-transform: skew(0deg) translateY(0);
+    -moz-transform: skew(0deg) translateY(0);
+    -ms-transform: skew(0deg) translateY(0);
+    -o-transform: skew(0deg) translateY(0);
+    transform: skew(0deg) translateY(0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.css_prefix-full-menu {
+    margin: auto 0;
+}
+
+.css_prefix-full-menu .navbar-nav {
+    position: relative;
+    z-index: 99;
+}
+
+.css_prefix-full-menu .navbar-nav>li {
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li {
+    visibility: hidden;
+    display: none;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.css_prefix-mobile-menu.menu-open .css_prefix-full-menu .navbar-nav>li,
+.menu-animation .navbar-nav>li {
+    visibility: visible;
+    display: block;
+    -webkit-animation-name: fadeInAnimation;
+    animation-name: fadeInAnimation;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(2),
+.menu-animation .navbar-nav>li:nth-child(2) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(3),
+.menu-animation .navbar-nav>li:nth-child(3) {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(4),
+.menu-animation .navbar-nav>li:nth-child(4) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(5),
+.menu-animation .navbar-nav>li:nth-child(5) {
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    -o-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(6),
+.menu-animation .navbar-nav>li:nth-child(6) {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(7),
+.menu-animation .navbar-nav>li:nth-child(7) {
+    -webkit-animation-delay: 1.1s;
+    -moz-animation-delay: 1.1s;
+    -o-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(8),
+.menu-animation .navbar-nav>li:nth-child(8) {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(9),
+.menu-animation .navbar-nav>li:nth-child(9) {
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+    -o-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(10) {
+    -webkit-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+    -o-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(11) {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(12) {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(13) {
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+    -o-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+}
+
+.css_prefix-mobile-menu .css_prefix-full-menu .navbar-nav>li:nth-child(14) {
+    -webkit-animation-delay: 1.8s;
+    -moz-animation-delay: 1.8s;
+    -o-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+.css_prefix-mobile-menu.open-delay .css_prefix-full-menu .navbar-nav>li {
+    -webkit-animation-name: fadeOutAnimation;
+    animation-name: fadeOutAnimation;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    visibility: visible;
+}
+
+.css_prefix-mobile-menu.open-delay .css_prefix-full-menu .navbar-nav>li:nth-child(2) {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.css_prefix-mobile-menu.open-delay .css_prefix-full-menu .navbar-nav>li:nth-child(3) {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.css_prefix-mobile-menu.open-delay .css_prefix-full-menu .navbar-nav>li:nth-child(4) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.css_prefix-mobile-menu.open-delay .css_prefix-full-menu .navbar-nav>li:nth-child(5) {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.css_prefix-mobile-menu.open-delay .css_prefix-full-menu .navbar-nav>li:nth-child(6) {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.css_prefix-mobile-menu.open-delay .css_prefix-full-menu .navbar-nav>li:nth-child(7) {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.css_prefix-mobile-menu.open-delay .css_prefix-full-menu .navbar-nav>li:nth-child(8) {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.css_prefix-mobile-menu.open-delay .css_prefix-full-menu .navbar-nav>li:nth-child(9) {
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.css_prefix-mobile-menu .navbar-nav li .sub-menu li a {
+    font-size: var(--font-size-h5);
+    color: var(--global-font-color);
+}
+
+.css_prefix-mobile-menu .sub-menu {
+    list-style-type: none;
+    padding-top: 1em;
+}
+
+.css_prefix-mobile-menu .sub-menu .sub-menu {
+    padding: 0.625em 0 0.625em 1em;
+}
+
+.css_prefix-mobile-menu .navbar-nav li .css_prefix-has-sub-menu {
+    padding-top: 0.625em;
+}
+
+.css_prefix-mobile-menu .css_prefix-has-sub-menu {
+    padding-left: 2em;
+}
+
+.css_prefix-has-sub-menu {
+    list-style-type: none;
+}
+
+.css_prefix-mobile-menu .navbar-expand-xl .navbar-nav {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/* light Mode */
+
+.css_prefix-mobile-menu.light-mode {
+    background: var(--color-theme-white);
+}
+
+.css_prefix-mobile-menu.light-mode .navbar-nav>li>a {
+    color: var(--global-font-title);
+}
+
+.css_prefix-mobile-menu.light-mode .navbar-nav>li>.toggledrop {
+    color: var(--global-font-title);
+}
+
+.css_prefix-mobile-menu.light-mode .navbar-nav>li:hover>a {
+    color: var(--color-theme-primary);
+}
+
+@-webkit-keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(3.125em);
+        transform: translateY(3.125em);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(3.125em);
+        transform: translateY(3.125em);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1199px) {
+    header.header-default .navbar-collapse {
+        display: none;
+    }
+    .css_prefix-mobile-menu .navbar-nav>li>a {
+        font-size: 1.5em;
+    }
+    .css_prefix-mobile-menu .navbar-nav li .sub-menu li a,
+    .css_prefix-mobile-menu .navbar-nav li li>.toggledrop i {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 479px) {
+    .css_prefix-mobile-menu .navbar-nav>li>a {
+        font-size: var(--font-size-body);
+    }
+    .css_prefix-mobile-menu .navbar-nav li .sub-menu li a,
+    .css_prefix-mobile-menu .navbar-nav li li>.toggledrop i {
+        font-size: var(--font-size-normal);
+    }
+}
+
+.vertical-menu-layout .menu-new-wrapper.row {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.vertical-menu-layout .css_prefix-full-menu .navbar-nav {
+    padding: 0;
+}
+
+.vertical-menu-layout.css_prefix-mobile-menu .navbar {
+    padding: 0;
+}
+
+.css_prefix-mobile-menu.vertical-menu-layout {
+    background: transparent;
+    position: relative;
+}
+
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav>li>a {
+    color: var(--global-font-title);
+    font-size: var(--font-size-h4);
+}
+
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav li.current-menu-item>.toggledrop i,
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav li.current-menu-item>a,
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav li .sub-menu li:hover>a,
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav li:hover>.toggledrop i,
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav li:hover>a,
+.css_prefix-mobile-menu.vertical-menu-layout ul>li.current-menu-ancestor>.toggledrop i,
+.css_prefix-mobile-menu.vertical-menu-layout ul>li.current-menu-ancestor>a,
+.css_prefix-mobile-menu.vertical-menu-layout ul li .sub-menu li.current-menu-item>a,
+.css_prefix-mobile-menu.vertical-menu-layout ul li .sub-menu li.menu-item.current-menu-ancestor>a {
+    color: var(--color-theme-primary);
+}
+
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav li .sub-menu li a {
+    color: var(--global-font-color);
+    font-size: 1.313em;
+}
+
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav li li>.toggledrop i {
+    font-size: var(--font-size-xs);
+}

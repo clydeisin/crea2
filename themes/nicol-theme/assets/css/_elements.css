@@ -1,0 +1,261 @@
+@import "_custom-properties.css";
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+/* stylelint-disable */
+
+html {
+    box-sizing: border-box;
+}
+
+/* stylelint-enable */
+
+/**
+ * Inherit box-sizing to make it easier to change the property for
+ * components that leverage other behavior; see
+ * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a:focus {
+    color: var(--color-theme-primary);
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: var(--color-theme-primary);
+    text-decoration: none;
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    outline: none;
+}
+
+p {
+    margin: 1em 0;
+    line-height: 1.66em;
+}
+
+/* stylelint-disable */
+
+hr {
+    background-color: var(--border-color-dark);
+    border: 0;
+    height: 0.0625em;
+    margin: 0;
+    padding: 0;
+}
+
+/* stylelint-enable */
+
+ul,
+ol {
+    padding-left: 1.625em;
+    margin-bottom: 1em;
+}
+
+ol ol {
+    padding-left: 1.625em;
+}
+
+/* Definition Lists */
+
+dd {
+    margin: 0 1.5em 1.5em;
+}
+
+dl dd {
+    margin-bottom: 1em;
+}
+
+dl dd:last-child {
+    margin-bottom: 0;
+}
+
+li>ul,
+li>ol {
+    margin-bottom: 0;
+}
+
+dt {
+    font-weight: 700;
+}
+
+/* stylelint-disable */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* stylelint-enable */
+
+/* Table */
+
+table {
+    border: 0.0625em solid var(--border-color-light);
+    width: 100%;
+    margin-bottom: 1.25em;
+}
+
+table td,
+table th {
+    border: 0.0625em solid var(--border-color-light);
+    padding: 0.3125em 0.5em;
+    text-align: center;
+}
+
+/* inputs */
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.625em;
+    line-height: 2;
+    height: 2em;
+}
+
+input,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    width: 100%;
+    float: left;
+    padding: 0;
+    height: 3.75em;
+    line-height: 3.75em;
+    background: transparent;
+    border: none;
+    border-bottom: 0.0625em solid var(--border-color-light);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    color: var(--global-font-color);
+}
+
+.css_prefix-comments-info .title a {
+    color: var(--global-font-title);
+}
+
+.css_prefix-comments-info .title a:hover {
+    color: var(--color-theme-secondary);
+}
+
+select {
+    border: none;
+    border-bottom: 0.0625em solid var(--border-color-light);
+    background: transparent;
+    line-height: 3em;
+    height: 3em;
+    padding: 0;
+    width: 100%;
+    color: var(--global-font-color);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+textarea {
+    padding: 1em 0;
+    height: 9.375em;
+    min-height: 9.375em;
+    line-height: var(--font-line-height-body);
+}
+
+::placeholder {
+    opacity: 1;
+    /* Firefox */
+}
+
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder,
+input::-ms-input-placeholder,
+input::-o-input-placeholder,
+textarea::-webkit-input-placeholder,
+textarea::-moz-placeholder,
+textarea:-ms-input-placeholder,
+textarea::-ms-input-placeholder,
+textarea::-o-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="email"]::-ms-input-placeholder,
+input[type="email"]::-o-input-placeholder {
+    color: var(--color-theme-white);
+}
+
+.contact-form.white-card-form input::-webkit-input-placeholder,
+.contact-form.white-card-form input::-moz-input-placeholder,
+.contact-form.white-card-form input:-ms-input-placeholder,
+.contact-form.white-card-form input::-ms-input-placeholder,
+.contact-form.white-card-form input::-o-input-placeholder {
+    color: #000;
+    opacity: .8;
+}
+
+input[type="text"]:focus,
+input:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--color-theme-primary);
+    box-shadow: none;
+    outline: none;
+}
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+    width: 100%;
+}
+
+iframe {
+    border: none;
+}
