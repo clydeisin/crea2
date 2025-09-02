@@ -1,0 +1,186 @@
+/*For elementor header */
+
+header .header-up.has-sticky,
+header .header-down.has-sticky {
+    position: fixed !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: var(--global-box-shadow);
+    -webkit-box-shadow: var(--global-box-shadow);
+    -moz-box-shadow: var(--global-box-shadow);
+    -o-box-shadow: var(--global-box-shadow);
+    -ms-box-shadow: var(--global-box-shadow);
+    transition: all 1s ease 0s !important;
+    -webkit-transition: all 1s ease 0s !important;
+    -moz-transition: all 1s ease 0s !important;
+    -o-transition: all 1s ease 0s !important;
+    z-index: 99;
+}
+
+header .header-up.has-sticky {
+    background: var(--global-body-lightbg);
+}
+
+header .header-down.has-sticky {
+    transform: translateY(-50em);
+    -webkit-transform: translateY(-50em);
+    -moz-transform: translateY(-50em);
+    -o-transform: translateY(-50em);
+    -ms-transform: translateY(-50em);
+}
+
+/*For elementor header End*/
+
+/* header over */
+
+.iqonic-header-over header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background: transparent;
+}
+
+.iqonic-header-over .css_prefix-breadcrumb {
+    padding: 12.25em 1em 8.25em;
+}
+
+/*  Mega menu center Position*/
+
+.column-has-position-static .sf-menu>.menu-item>.iqonic-megamenu-container {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50% !important;
+}
+
+.column-has-position-static ul.navbar-nav>li.megamenu-layout,
+.column-has-position-static .navbar,
+.column-has-position-static .layouts-section-position-static .elementor-widget,
+.column-has-position-static .layouts-section-position-static .elementor-widget-wrap,
+.column-has-position-static .layouts-section-position-static.elementor-column,
+.column-has-position-static .layouts-section-position-static .elementor-column-wrap,
+.column-has-position-static.elementor-section .elementor-container {
+    position: static !important;
+}
+
+/*  Mega menu center Position End*/
+
+@media(max-width:480px) {
+    .iqonic-header-over .css_prefix-breadcrumb {
+        padding: 8.25em 1em 5.25em;
+    }
+}
+
+/* Vertical header*/
+
+.vertical-header .container-fluid {
+    padding: 0;
+}
+
+.menu-align-center .css_prefix-mobile-menu .sub-menu {
+    padding-left: 0;
+}
+
+.css_prefix-mobile-menu.vertical-menu-layout .navbar-nav li .sub-menu li a {
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-full-menu-container ul.navbar-nav,
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-main-menu-container ul.navbar-nav {
+        padding-right: 3.375em;
+        width: 70%;
+    }
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-full-menu-container ul.navbar-nav>li>ul.sub-menu,
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-main-menu-container ul.navbar-nav>li>ul.sub-menu {
+        right: -68%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-full-menu-container ul.navbar-nav,
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-main-menu-container ul.navbar-nav {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* .admin-bar .vertical-header .elementor-section.elementor-section-height-full{
+		height: calc(100vh - 2em);
+	} */
+    /* nav-widget style two*/
+    .css_prefix-mobile-menu.menu-style-two .navbar-nav li .sub-menu li a {
+        padding-bottom: 0.3125em;
+    }
+    .css_prefix-mobile-menu .navbar-nav li .sub-menu li a {
+        position: relative;
+    }
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-full-menu-container ul.navbar-nav,
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-main-menu-container ul.navbar-nav {
+        position: relative;
+    }
+    .iqonic-custom-layouts.open .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu {
+        -webkit-animation: slide-bottom 2s;
+        animation: slide-bottom 2s;
+        animation-delay: 0s;
+    }
+    .iqonic-custom-layouts.open .image-anim-delay {
+        -webkit-animation: slide-bottom 2s;
+        animation: slide-bottom 2s;
+        animation-delay: 0s;
+    }
+    .iqonic-custom-layouts.open .image-anim-delay-2 {
+        -webkit-animation: slide-bottom 2s;
+        animation: slide-bottom 2s;
+        animation-delay: 0s;
+    }
+    .iqonic-custom-layouts .sidebar-scrollbar .widget::before {
+        display: none;
+    }
+    .iqonic-custom-layouts .sidebar-scrollbar .widget {
+        border: none;
+        padding: 0;
+        background: none;
+    }
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-main-menu-container ul.navbar-nav>li {
+        position: static;
+        width: 50%;
+    }
+    .vertical-menu-layout.menu-style-two .css_prefix-full-menu,
+    .vertical-menu-layout.menu-style-two .menu-main-menu-container {
+        width: 100%;
+    }
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-full-menu-container ul.navbar-nav>li>ul.sub-menu,
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-main-menu-container ul.navbar-nav>li>ul.sub-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        padding-left: 4em;
+        overflow-y: auto;
+        padding-top: 0;
+        height: 45vh;
+    }
+    .css_prefix-mobile-menu.menu-style-two ul.navbar-nav:before {
+        content: "";
+        position: absolute;
+        width: 0.0625em;
+        height: 90%;
+        background: radial-gradient(circle, var(--color-theme-primary) 43%, rgba(220, 202, 135, 0) 100%);
+        left: 50%;
+    }
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-full-menu-container ul.navbar-nav>li>ul.sub-menu::-webkit-scrollbar,
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-main-menu-container ul.navbar-nav>li>ul.sub-menu::-webkit-scrollbar {
+        width: 0.125em;
+        height: 0.125em;
+        box-shadow: none;
+    }
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-full-menu-container ul.navbar-nav>li>ul.sub-menu::-webkit-scrollbar-thumb,
+    .css_prefix-mobile-menu.menu-style-two .css_prefix-full-menu .menu-main-menu-container ul.navbar-nav>li>ul.sub-menu::-webkit-scrollbar-thumb {
+        background: var(--color-theme-primary) !important;
+        box-shadow: none !important;
+    }
+}

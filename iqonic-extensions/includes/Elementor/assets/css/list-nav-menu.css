@@ -1,0 +1,58 @@
+/* Style-one */
+
+.widget-list-nav-menu.list-nav-style-one .layout-list-widget li {
+    list-style: none;
+}
+
+.widget-list-nav-menu.list-nav-style-one .layout-list-widget {
+    padding: 0;
+}
+
+.widget-list-nav-menu.list-nav-style-one .layout-list-widget li a {
+    padding: .5em 0;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.widget-list-nav-menu.list-nav-style-one .layout-list-widget li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: var(--border-radius-box);
+    background: var(--color-theme-primary);
+    width: 0.3125em;
+    height: 0.3125em;
+    top: 50%;
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.widget-list-nav-menu.list-nav-style-one .layout-list-widget li a:hover:before {
+    opacity: 1;
+}
+
+.widget-list-nav-menu.list-nav-style-one .layout-list-widget li a:hover {
+    color: var(--color-theme-primary);
+    padding-left: 1em;
+}
+
+.widget-list-nav-menu.list-nav-style-one .layout-list-widget li a .link-badge,
+.link-badge {
+    padding: 4px 10px;
+    background: var(--color-theme-primary);
+    color: var(--color-theme-white);
+    border-radius: 90px;
+    font-size: 10px;
+    margin-left: 15px;
+    display: inline-block;
+    line-height: normal;
+}
